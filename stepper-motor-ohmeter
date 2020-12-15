@@ -1,0 +1,54 @@
+#include <Stepper.h>
+
+const int stepsPerRevolution = 2048;
+Stepper stepper = Stepper(stepsPerRevolution, 11, 9, 10, 8);
+
+int analogPin = 0;
+int raw = 0;
+int Vin = 5;
+float Vout = 0;
+float R1 = 1000;                  //value of known resistor
+float R2 = 0;                     //unknown resistor
+float buffer = 0;
+int stepCount = 0;
+
+void setup(){
+    pinMode(2, INPUT_PULLUP);
+    pinMode(3, INPUT_PULLUP);
+    pinMode(4, INPUT_PULLUP);
+    Serial.begin(57600);
+    stepper.step(0);                  //tare stepper motor
+    stepper.setSpeed(10);              // set the speed at 10 rpm:
+}
+
+void loop(){
+  raw = analogRead(analogPin);
+  if(raw){
+    buffer = raw * Vin;
+    Vout = (buffer)/1024.0;
+    buffer = (Vin/Vout) - 1;
+    R2= R1 * buffer;
+    Serial.print("Vout: ");
+    Serial.println(Vout);
+    Serial.print("R2: ");
+    Serial.println(R2);
+    delay(1000);
+  }
+ if (digitalRead(2) == LOW && digitalRead(3) == HIGH) {
+  Serial.println("Resistor Dial Reading:");
+  Serial.print(R2);
+  stepper.step(R2);             //use Vout value to move stepper
+  delay(500);
+ }
+ else {
+  stepper.step(0);
+  delay(10);
+  }
+while (digitalRead(3) == LOW  && digitalRead(2) == HIGH) {
+  stepper.step(-R2);             
+  Serial.println("Reset Steps:");             //calibrations
+  Serial.println(-R2);
+  delay(10);
+ }
+
+}
