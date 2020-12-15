@@ -4,8 +4,8 @@
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
+* [Wiring Diagram](#wiring-diagram)
 * [Circuit Setup](#circuit-setup)
-* [Mechanical & Electical Set Up](#mechanical-&-electrical-set-up)
 * [Status](#status)
 * [Contact](#contact)
 
@@ -15,7 +15,7 @@ The purpose of this project is to explore the uses of the Atmega328 uController 
 ## Technologies
 * ArduinoIDE- version 1.8.13
 
-## Circuit Setup
+## Wiring Diagram
 ![SetUp](setA.PNG)
 
 ## Circuit Setup
