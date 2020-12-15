@@ -19,7 +19,7 @@ The purpose of this project is to explore the uses of the Atmega328 uController 
 ![SetUp](setA.PNG)
 
 ## Circuit Setup
-![SetUp](setA.PNG)
+![SetUp](Capture.PNG)
 
 ## Status
 Project is: _finished_
