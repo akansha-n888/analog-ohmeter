@@ -5,6 +5,7 @@
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Circuit Setup](#circuit-setup)
+* [Mechanical & Electical Set Up](#mechanical-&-electrical-set-up)
 * [Status](#status)
 * [Contact](#contact)
 
@@ -15,7 +16,10 @@ The purpose of this project is to explore the uses of the Atmega328 uController 
 * ArduinoIDE- version 1.8.13
 
 ## Circuit Setup
-![SetUp](actuators.PNG)
+![SetUp](setA.PNG)
+
+## Circuit Setup
+![SetUp](setA.PNG)
 
 ## Status
 Project is: _finished_
