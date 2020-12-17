@@ -7,6 +7,7 @@
 * [Wiring Diagram](#wiring-diagram)
 * [Circuit Setup](#circuit-setup)
 * [Status](#status)
+* [Video Link](#video-link)
 * [Contact](#contact)
 
 ## General info
@@ -23,7 +24,9 @@ The purpose of this project is to explore the uses of the Atmega328 uController 
 
 ## Status
 Project is: _finished_
-Video Link: [https://youtu.be/ca0Kb_2w8KI] (https://youtu.be/ca0Kb_2w8KI)
+
+## Video Link
+[https://youtu.be/ca0Kb_2w8KI] (https://youtu.be/ca0Kb_2w8KI)
 
 ## Contact
 Created by [@akansha-n888](https://www.linkedin.com/in/akansha-nagar/) - feel free to contact me!
