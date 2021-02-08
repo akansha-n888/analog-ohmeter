@@ -1,4 +1,4 @@
-# analog-ohmeter
+# analog-ohmmeter
 > This repository uses a voltage divider circuit to measure the value of an unknown resistor. The voltage output after being converted by the ADC calculation, rotates the stepper motor to the correct resistance on a graded dial. Two push buttons are used to 'start' and 'reset' the rotation of the stepper. 
 
 ## Table of contents
